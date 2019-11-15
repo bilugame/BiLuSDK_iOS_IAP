@@ -44,26 +44,16 @@ BiLuSDK支持Game Center 和游客模式 生成用户系统。
 |---|---|---|---|---|
 
 **注:** 导入SDK和系统支持库操作
-![](README_IMAGE/build_setting_07.png)
-![](README_IMAGE/build_setting_08.png)
-![](README_IMAGE/build_setting_09.png)
+
 ![](README_IMAGE/build_setting_10.png)
 
-- StoreKit.framework
-- MobileCoreServices.framework
 - WebKit.framework
-- MediaPlayer.framework
-- CoreMedia.framework
-- AVFoundation.framework
 - CoreTelephony.framework
 - SystemConfiguration.framework
 - AdSupport.framework
 - CoreMotion.framework
 - CoreLocation.framework  
 - QuartzCore.framework
-- libxml2.tbd
-- libresolv.9.tbd
-- libsqlite3.tbd
 - libc++.tbd
 - libz.tbd
 
