@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37364BCB237D6A7200104BA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BCA237D6A7200104BA8 /* AppDelegate.m */; };
+		37364BD1237D6A7200104BA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BD0237D6A7200104BA8 /* ViewController.m */; };
+		37364BD4237D6A7200104BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37364BD2237D6A7200104BA8 /* Main.storyboard */; };
+		37364BD6237D6A7300104BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37364BD5237D6A7300104BA8 /* Assets.xcassets */; };
+		37364BD9237D6A7300104BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37364BD7237D6A7300104BA8 /* LaunchScreen.storyboard */; };
+		37364BDC237D6A7300104BA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BDB237D6A7300104BA8 /* main.m */; };
+		37364BE6237D6A7400104BA8 /* BiLuSDKIAPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BE5237D6A7400104BA8 /* BiLuSDKIAPDemoTests.m */; };
+		37364BF1237D6A7D00104BA8 /* BiLuSDKIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF0237D6A7D00104BA8 /* BiLuSDKIAP.framework */; };
+		37364BF4237D6C2800104BA8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF3237D6C2800104BA8 /* libc++.tbd */; };
+		37364BF6237D6C2C00104BA8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF5237D6C2C00104BA8 /* libz.tbd */; };
+		37364BF8237D6C3000104BA8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF7237D6C3000104BA8 /* AdSupport.framework */; };
+		37364BFA237D6C3500104BA8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF9237D6C3500104BA8 /* SystemConfiguration.framework */; };
+		37364BFC237D6C4200104BA8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BFB237D6C4200104BA8 /* Security.framework */; };
+		37364BFE237D6C4900104BA8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BFD237D6C4900104BA8 /* CoreMotion.framework */; };
+		37364C00237D6C5000104BA8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BFF237D6C5000104BA8 /* CoreTelephony.framework */; };
+		37364C03237E381600104BA8 /* AppStorePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364C02237E381500104BA8 /* AppStorePay.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37364BE2237D6A7400104BA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37364BBE237D6A7200104BA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37364BC5237D6A7200104BA8;
+			remoteInfo = BiLuSDKIAPDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37364BC6237D6A7200104BA8 /* BiLuSDKIAPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLuSDKIAPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37364BC9237D6A7200104BA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37364BCA237D6A7200104BA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		37364BCF237D6A7200104BA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		37364BD0237D6A7200104BA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		37364BD3237D6A7200104BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37364BD5237D6A7300104BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37364BD8237D6A7300104BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37364BDA237D6A7300104BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37364BDB237D6A7300104BA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37364BE1237D6A7400104BA8 /* BiLuSDKIAPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiLuSDKIAPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37364BE5237D6A7400104BA8 /* BiLuSDKIAPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiLuSDKIAPDemoTests.m; sourceTree = "<group>"; };
+		37364BE7237D6A7400104BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37364BF0237D6A7D00104BA8 /* BiLuSDKIAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKIAP.framework; sourceTree = "<group>"; };
+		37364BF3237D6C2800104BA8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		37364BF5237D6C2C00104BA8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		37364BF7237D6C3000104BA8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		37364BF9237D6C3500104BA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		37364BFB237D6C4200104BA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		37364BFD237D6C4900104BA8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		37364BFF237D6C5000104BA8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		37364C01237E381500104BA8 /* AppStorePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStorePay.h; sourceTree = "<group>"; };
+		37364C02237E381500104BA8 /* AppStorePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStorePay.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37364BC3237D6A7200104BA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37364C00237D6C5000104BA8 /* CoreTelephony.framework in Frameworks */,
+				37364BFE237D6C4900104BA8 /* CoreMotion.framework in Frameworks */,
+				37364BFC237D6C4200104BA8 /* Security.framework in Frameworks */,
+				37364BFA237D6C3500104BA8 /* SystemConfiguration.framework in Frameworks */,
+				37364BF8237D6C3000104BA8 /* AdSupport.framework in Frameworks */,
+				37364BF6237D6C2C00104BA8 /* libz.tbd in Frameworks */,
+				37364BF4237D6C2800104BA8 /* libc++.tbd in Frameworks */,
+				37364BF1237D6A7D00104BA8 /* BiLuSDKIAP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37364BDE237D6A7400104BA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37364BBD237D6A7200104BA8 = {
+			isa = PBXGroup;
+			children = (
+				37364BC8237D6A7200104BA8 /* BiLuSDKIAPDemo */,
+				37364BE4237D6A7400104BA8 /* BiLuSDKIAPDemoTests */,
+				37364BC7237D6A7200104BA8 /* Products */,
+				37364BF2237D6C2700104BA8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		37364BC7237D6A7200104BA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37364BC6237D6A7200104BA8 /* BiLuSDKIAPDemo.app */,
+				37364BE1237D6A7400104BA8 /* BiLuSDKIAPDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37364BC8237D6A7200104BA8 /* BiLuSDKIAPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				37364BC9237D6A7200104BA8 /* AppDelegate.h */,
+				37364BCA237D6A7200104BA8 /* AppDelegate.m */,
+				37364BF0237D6A7D00104BA8 /* BiLuSDKIAP.framework */,
+				37364BCF237D6A7200104BA8 /* ViewController.h */,
+				37364BD0237D6A7200104BA8 /* ViewController.m */,
+				37364C01237E381500104BA8 /* AppStorePay.h */,
+				37364C02237E381500104BA8 /* AppStorePay.m */,
+				37364BD2237D6A7200104BA8 /* Main.storyboard */,
+				37364BD5237D6A7300104BA8 /* Assets.xcassets */,
+				37364BD7237D6A7300104BA8 /* LaunchScreen.storyboard */,
+				37364BDA237D6A7300104BA8 /* Info.plist */,
+				37364BDB237D6A7300104BA8 /* main.m */,
+			);
+			path = BiLuSDKIAPDemo;
+			sourceTree = "<group>";
+		};
+		37364BE4237D6A7400104BA8 /* BiLuSDKIAPDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				37364BE5237D6A7400104BA8 /* BiLuSDKIAPDemoTests.m */,
+				37364BE7237D6A7400104BA8 /* Info.plist */,
+			);
+			path = BiLuSDKIAPDemoTests;
+			sourceTree = "<group>";
+		};
+		37364BF2237D6C2700104BA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37364BFF237D6C5000104BA8 /* CoreTelephony.framework */,
+				37364BFD237D6C4900104BA8 /* CoreMotion.framework */,
+				37364BFB237D6C4200104BA8 /* Security.framework */,
+				37364BF9237D6C3500104BA8 /* SystemConfiguration.framework */,
+				37364BF7237D6C3000104BA8 /* AdSupport.framework */,
+				37364BF5237D6C2C00104BA8 /* libz.tbd */,
+				37364BF3237D6C2800104BA8 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37364BC5237D6A7200104BA8 /* BiLuSDKIAPDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37364BEA237D6A7400104BA8 /* Build configuration list for PBXNativeTarget "BiLuSDKIAPDemo" */;
+			buildPhases = (
+				37364BC2237D6A7200104BA8 /* Sources */,
+				37364BC3237D6A7200104BA8 /* Frameworks */,
+				37364BC4237D6A7200104BA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiLuSDKIAPDemo;
+			productName = BiLuSDKIAPDemo;
+			productReference = 37364BC6237D6A7200104BA8 /* BiLuSDKIAPDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37364BE0237D6A7400104BA8 /* BiLuSDKIAPDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37364BED237D6A7400104BA8 /* Build configuration list for PBXNativeTarget "BiLuSDKIAPDemoTests" */;
+			buildPhases = (
+				37364BDD237D6A7400104BA8 /* Sources */,
+				37364BDE237D6A7400104BA8 /* Frameworks */,
+				37364BDF237D6A7400104BA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37364BE3237D6A7400104BA8 /* PBXTargetDependency */,
+			);
+			name = BiLuSDKIAPDemoTests;
+			productName = BiLuSDKIAPDemoTests;
+			productReference = 37364BE1237D6A7400104BA8 /* BiLuSDKIAPDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37364BBE237D6A7200104BA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = mobile;
+				TargetAttributes = {
+					37364BC5237D6A7200104BA8 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					37364BE0237D6A7400104BA8 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 37364BC5237D6A7200104BA8;
+					};
+				};
+			};
+			buildConfigurationList = 37364BC1237D6A7200104BA8 /* Build configuration list for PBXProject "BiLuSDKIAPDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37364BBD237D6A7200104BA8;
+			productRefGroup = 37364BC7237D6A7200104BA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37364BC5237D6A7200104BA8 /* BiLuSDKIAPDemo */,
+				37364BE0237D6A7400104BA8 /* BiLuSDKIAPDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37364BC4237D6A7200104BA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37364BD9237D6A7300104BA8 /* LaunchScreen.storyboard in Resources */,
+				37364BD6237D6A7300104BA8 /* Assets.xcassets in Resources */,
+				37364BD4237D6A7200104BA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37364BDF237D6A7400104BA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37364BC2237D6A7200104BA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37364C03237E381600104BA8 /* AppStorePay.m in Sources */,
+				37364BD1237D6A7200104BA8 /* ViewController.m in Sources */,
+				37364BCB237D6A7200104BA8 /* AppDelegate.m in Sources */,
+				37364BDC237D6A7300104BA8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37364BDD237D6A7400104BA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37364BE6237D6A7400104BA8 /* BiLuSDKIAPDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37364BE3237D6A7400104BA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37364BC5237D6A7200104BA8 /* BiLuSDKIAPDemo */;
+			targetProxy = 37364BE2237D6A7400104BA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37364BD2237D6A7200104BA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37364BD3237D6A7200104BA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37364BD7237D6A7300104BA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37364BD8237D6A7300104BA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37364BE8237D6A7400104BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37364BE9237D6A7400104BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37364BEB237D6A7400104BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86L92M2S83;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BiLuSDKIAPDemo",
+				);
+				INFOPLIST_FILE = BiLuSDKIAPDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pet.cm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37364BEC237D6A7400104BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV93CX6T8Q;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BiLuSDKIAPDemo",
+				);
+				INFOPLIST_FILE = BiLuSDKIAPDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pet.cm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		37364BEE237D6A7400104BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiLuSDKIAPDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.BiLuSDKIAPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiLuSDKIAPDemo.app/BiLuSDKIAPDemo";
+			};
+			name = Debug;
+		};
+		37364BEF237D6A7400104BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiLuSDKIAPDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.BiLuSDKIAPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiLuSDKIAPDemo.app/BiLuSDKIAPDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37364BC1237D6A7200104BA8 /* Build configuration list for PBXProject "BiLuSDKIAPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37364BE8237D6A7400104BA8 /* Debug */,
+				37364BE9237D6A7400104BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37364BEA237D6A7400104BA8 /* Build configuration list for PBXNativeTarget "BiLuSDKIAPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37364BEB237D6A7400104BA8 /* Debug */,
+				37364BEC237D6A7400104BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37364BED237D6A7400104BA8 /* Build configuration list for PBXNativeTarget "BiLuSDKIAPDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37364BEE237D6A7400104BA8 /* Debug */,
+				37364BEF237D6A7400104BA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37364BBE237D6A7200104BA8 /* Project object */;
+}
