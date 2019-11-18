@@ -32,7 +32,7 @@ BiLuSDK支持Game Center 和游客模式 生成用户系统。
 ### 2.2、导入基础核心框架
 核心模块包含以下框架和资源包文件，只需将它们拖放到Xcode中。
 
-- BiLuSDK.framework
+- BiLuSDKIAP.framework
 
 
 **注:** 由于**BiLuSDK**暂时不支持cocoapod

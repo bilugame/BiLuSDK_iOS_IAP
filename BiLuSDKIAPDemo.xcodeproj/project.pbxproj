@@ -14,7 +14,6 @@
 		37364BD9237D6A7300104BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37364BD7237D6A7300104BA8 /* LaunchScreen.storyboard */; };
 		37364BDC237D6A7300104BA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BDB237D6A7300104BA8 /* main.m */; };
 		37364BE6237D6A7400104BA8 /* BiLuSDKIAPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BE5237D6A7400104BA8 /* BiLuSDKIAPDemoTests.m */; };
-		37364BF1237D6A7D00104BA8 /* BiLuSDKIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF0237D6A7D00104BA8 /* BiLuSDKIAP.framework */; };
 		37364BF4237D6C2800104BA8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF3237D6C2800104BA8 /* libc++.tbd */; };
 		37364BF6237D6C2C00104BA8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF5237D6C2C00104BA8 /* libz.tbd */; };
 		37364BF8237D6C3000104BA8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BF7237D6C3000104BA8 /* AdSupport.framework */; };
@@ -23,6 +22,7 @@
 		37364BFE237D6C4900104BA8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BFD237D6C4900104BA8 /* CoreMotion.framework */; };
 		37364C00237D6C5000104BA8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BFF237D6C5000104BA8 /* CoreTelephony.framework */; };
 		37364C03237E381600104BA8 /* AppStorePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364C02237E381500104BA8 /* AppStorePay.m */; };
+		52BCF75F23828EC600BF3763 /* BiLuSDKIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCF75E23828EC600BF3763 /* BiLuSDKIAP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 		37364BE1237D6A7400104BA8 /* BiLuSDKIAPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiLuSDKIAPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37364BE5237D6A7400104BA8 /* BiLuSDKIAPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiLuSDKIAPDemoTests.m; sourceTree = "<group>"; };
 		37364BE7237D6A7400104BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37364BF0237D6A7D00104BA8 /* BiLuSDKIAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKIAP.framework; sourceTree = "<group>"; };
 		37364BF3237D6C2800104BA8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		37364BF5237D6C2C00104BA8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		37364BF7237D6C3000104BA8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -59,6 +58,8 @@
 		37364BFF237D6C5000104BA8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		37364C01237E381500104BA8 /* AppStorePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStorePay.h; sourceTree = "<group>"; };
 		37364C02237E381500104BA8 /* AppStorePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStorePay.m; sourceTree = "<group>"; };
+		52BCF7472382888300BF3763 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		52BCF75E23828EC600BF3763 /* BiLuSDKIAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKIAP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BCF75F23828EC600BF3763 /* BiLuSDKIAP.framework in Frameworks */,
 				37364C00237D6C5000104BA8 /* CoreTelephony.framework in Frameworks */,
 				37364BFE237D6C4900104BA8 /* CoreMotion.framework in Frameworks */,
 				37364BFC237D6C4200104BA8 /* Security.framework in Frameworks */,
@@ -73,7 +75,6 @@
 				37364BF8237D6C3000104BA8 /* AdSupport.framework in Frameworks */,
 				37364BF6237D6C2C00104BA8 /* libz.tbd in Frameworks */,
 				37364BF4237D6C2800104BA8 /* libc++.tbd in Frameworks */,
-				37364BF1237D6A7D00104BA8 /* BiLuSDKIAP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,16 +112,16 @@
 			children = (
 				37364BC9237D6A7200104BA8 /* AppDelegate.h */,
 				37364BCA237D6A7200104BA8 /* AppDelegate.m */,
-				37364BF0237D6A7D00104BA8 /* BiLuSDKIAP.framework */,
-				37364BCF237D6A7200104BA8 /* ViewController.h */,
-				37364BD0237D6A7200104BA8 /* ViewController.m */,
 				37364C01237E381500104BA8 /* AppStorePay.h */,
 				37364C02237E381500104BA8 /* AppStorePay.m */,
-				37364BD2237D6A7200104BA8 /* Main.storyboard */,
 				37364BD5237D6A7300104BA8 /* Assets.xcassets */,
-				37364BD7237D6A7300104BA8 /* LaunchScreen.storyboard */,
+				52BCF75E23828EC600BF3763 /* BiLuSDKIAP.framework */,
 				37364BDA237D6A7300104BA8 /* Info.plist */,
+				37364BD7237D6A7300104BA8 /* LaunchScreen.storyboard */,
 				37364BDB237D6A7300104BA8 /* main.m */,
+				37364BD2237D6A7200104BA8 /* Main.storyboard */,
+				37364BCF237D6A7200104BA8 /* ViewController.h */,
+				37364BD0237D6A7200104BA8 /* ViewController.m */,
 			);
 			path = BiLuSDKIAPDemo;
 			sourceTree = "<group>";
@@ -137,6 +138,7 @@
 		37364BF2237D6C2700104BA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52BCF7472382888300BF3763 /* MobileCoreServices.framework */,
 				37364BFF237D6C5000104BA8 /* CoreTelephony.framework */,
 				37364BFD237D6C4900104BA8 /* CoreMotion.framework */,
 				37364BFB237D6C4200104BA8 /* Security.framework */,
@@ -407,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86L92M2S83;
 				ENABLE_BITCODE = NO;
@@ -415,7 +418,7 @@
 					"$(PROJECT_DIR)/BiLuSDKIAPDemo",
 				);
 				INFOPLIST_FILE = BiLuSDKIAPDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,7 +426,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pet.cm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,15 +435,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JV93CX6T8Q;
+				DEVELOPMENT_TEAM = 86L92M2S83;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BiLuSDKIAPDemo",
 				);
 				INFOPLIST_FILE = BiLuSDKIAPDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,7 +452,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pet.cm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -456,6 +462,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HUPAPH5UNS;
 				INFOPLIST_FILE = BiLuSDKIAPDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +482,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HUPAPH5UNS;
 				INFOPLIST_FILE = BiLuSDKIAPDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
