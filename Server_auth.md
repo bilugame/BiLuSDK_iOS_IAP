@@ -7,7 +7,7 @@
 ## Request
 
 ```
-线上 post  https://bilu.com/qk/game_cp/v1/verify_apple_receipt
+线上 post  https://bilu.com/game_cp/v1/verify_apple_receipt
 ```
 
 
