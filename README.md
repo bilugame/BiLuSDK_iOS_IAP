@@ -16,6 +16,9 @@
 * [4、高级-自定义事件](#4、高级-自定义事件)
   * 4.1 [用途和用法](#4.1、用途和用法)
   * 4.2 [接口及参数](#4.2、接口及参数)
+* [5、内购IAP二次验证](#5、内购IAP二次验证)
+  * 5.1 [用途和用法](#5.1、用途和用法)
+  * 5.2 [接口及参数](#5.2、接口及参数)
 
 
 ## 1、简介
@@ -135,14 +138,10 @@ BiLuSDK支持Game Center 和游客模式 生成用户系统。
 
 接口：(BiLuVirtualCurrency 类)
 
-    //充值请求
+    //记录付费点
     + (void)onChargeRequst:(NSString *)orderId iapId(NSString *)iapId currencyAmount:(double)currencyAmount currencyType:(NSString *)currencyType virtualCurrencyAmount:(double)virtualCurrencyAmount paymentType:(NSString *)paymentType;`
-    //充值成功
+    //记录付费点成功
     + (void)onChargeSuccess:(NSString *)orderId;
-
-    /// AppStore 内购二次验证
-    /// @param response 二次验证 返回block
-    + (void)appStoreReceipt:(void (^)(NSDictionary *json , NSError * error))response;
 
 
 |参数|类型|描述|
@@ -176,3 +175,19 @@ BiLuSDK支持Game Center 和游客模式 生成用户系统。
 |eventId	|NSString	|自定义事件名称，最多支持 32 个字符。仅限使用中英文字符、数字和下划线，不要加空格或其他的转义字符|
 |key	|NSString	|自定义事件参数名称，最多支持 32 个字符|
 |NSDictionary	|NSString<br>NSNumber | key 类型必须是 NSString，一次事件最多只支持 50 个参数。如果 value 为 NSString，Game Analytics 会统计每种 value 出现的次数；如果为 NSNumber 类型，那么 Game  Analytics 会统计 value 的总和|
+
+## 5、内购IAP二次验证
+
+### 5.1、用途和用法
+
+IAP二次验证，封装了测试：https://sandbox.itunes.apple.com/verifyReceipt
+已上线Appstore：https://buy.itunes.apple.com/verifyReceipt 接口，采用服务器验证方式。调用完内购支付完即可调用此方法验证是否支付完成。
+
+
+### 5.2、接口及参数
+
+接口：(BiLuVirtualCurrency 类)
+
+     /// AppStore 内购IAP二次验证
+    /// @param response 二次验证 返回block
+    + (void)appStoreReceipt:(void (^)(NSDictionary *json , NSError * error))response;
