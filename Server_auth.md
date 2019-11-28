@@ -19,8 +19,7 @@
 API相关的公共参数都是通过header发送的 没有传空即可，**Header必须传大写**
 
 - `TIMESTAMP`        时间戳 必须用13位int时间戳   如1568619193372 （1568619193.372）  （**参与sign**)  
-- `BILU-UUID`               哔噜用户唯一字符串     （不参与sign)  
-- `BILU-BLID`               哔噜设备唯一内部标志    （不参与sign)  
+- `BILU-UUID`               哔噜用户唯一字符串     （不参与sign)   
 - `APP-ID`             应用id     （不参与sign)  
 - `SIGN`             签名         （不参与sign)  
 
