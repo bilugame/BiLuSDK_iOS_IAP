@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import <BiLuSDKIAP/BiLuSDKIAP.h>
-#import "AppStorePay.h"
 
 @interface ViewController ()
 
