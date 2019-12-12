@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0D371B23A23F9300A39BFB /* BiLuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D371923A23F9300A39BFB /* BiLuSDK.bundle */; };
+		0D0D371C23A23F9300A39BFB /* BiLuSDKIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0D371A23A23F9300A39BFB /* BiLuSDKIAP.framework */; };
 		37364BCB237D6A7200104BA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BCA237D6A7200104BA8 /* AppDelegate.m */; };
 		37364BD1237D6A7200104BA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BD0237D6A7200104BA8 /* ViewController.m */; };
 		37364BD4237D6A7200104BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37364BD2237D6A7200104BA8 /* Main.storyboard */; };
@@ -21,8 +23,6 @@
 		37364BFC237D6C4200104BA8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BFB237D6C4200104BA8 /* Security.framework */; };
 		37364BFE237D6C4900104BA8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BFD237D6C4900104BA8 /* CoreMotion.framework */; };
 		37364C00237D6C5000104BA8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37364BFF237D6C5000104BA8 /* CoreTelephony.framework */; };
-		37364C03237E381600104BA8 /* AppStorePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364C02237E381500104BA8 /* AppStorePay.m */; };
-		52BCF75F23828EC600BF3763 /* BiLuSDKIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BCF75E23828EC600BF3763 /* BiLuSDKIAP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0D371923A23F9300A39BFB /* BiLuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BiLuSDK.bundle; sourceTree = "<group>"; };
+		0D0D371A23A23F9300A39BFB /* BiLuSDKIAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKIAP.framework; sourceTree = "<group>"; };
 		37364BC6237D6A7200104BA8 /* BiLuSDKIAPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLuSDKIAPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37364BC9237D6A7200104BA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37364BCA237D6A7200104BA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,10 +58,7 @@
 		37364BFB237D6C4200104BA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		37364BFD237D6C4900104BA8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		37364BFF237D6C5000104BA8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		37364C01237E381500104BA8 /* AppStorePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStorePay.h; sourceTree = "<group>"; };
-		37364C02237E381500104BA8 /* AppStorePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStorePay.m; sourceTree = "<group>"; };
 		52BCF7472382888300BF3763 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		52BCF75E23828EC600BF3763 /* BiLuSDKIAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKIAP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BCF75F23828EC600BF3763 /* BiLuSDKIAP.framework in Frameworks */,
+				0D0D371C23A23F9300A39BFB /* BiLuSDKIAP.framework in Frameworks */,
 				37364C00237D6C5000104BA8 /* CoreTelephony.framework in Frameworks */,
 				37364BFE237D6C4900104BA8 /* CoreMotion.framework in Frameworks */,
 				37364BFC237D6C4200104BA8 /* Security.framework in Frameworks */,
@@ -88,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0D371823A23F9300A39BFB /* BiLuSDKIAP */ = {
+			isa = PBXGroup;
+			children = (
+				0D0D371923A23F9300A39BFB /* BiLuSDK.bundle */,
+				0D0D371A23A23F9300A39BFB /* BiLuSDKIAP.framework */,
+			);
+			path = BiLuSDKIAP;
+			sourceTree = "<group>";
+		};
 		37364BBD237D6A7200104BA8 = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +118,10 @@
 		37364BC8237D6A7200104BA8 /* BiLuSDKIAPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0D0D371823A23F9300A39BFB /* BiLuSDKIAP */,
 				37364BC9237D6A7200104BA8 /* AppDelegate.h */,
 				37364BCA237D6A7200104BA8 /* AppDelegate.m */,
-				37364C01237E381500104BA8 /* AppStorePay.h */,
-				37364C02237E381500104BA8 /* AppStorePay.m */,
 				37364BD5237D6A7300104BA8 /* Assets.xcassets */,
-				52BCF75E23828EC600BF3763 /* BiLuSDKIAP.framework */,
 				37364BDA237D6A7300104BA8 /* Info.plist */,
 				37364BD7237D6A7300104BA8 /* LaunchScreen.storyboard */,
 				37364BDB237D6A7300104BA8 /* main.m */,
@@ -230,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0D371B23A23F9300A39BFB /* BiLuSDK.bundle in Resources */,
 				37364BD9237D6A7300104BA8 /* LaunchScreen.storyboard in Resources */,
 				37364BD6237D6A7300104BA8 /* Assets.xcassets in Resources */,
 				37364BD4237D6A7200104BA8 /* Main.storyboard in Resources */,
@@ -250,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37364C03237E381600104BA8 /* AppStorePay.m in Sources */,
 				37364BD1237D6A7200104BA8 /* ViewController.m in Sources */,
 				37364BCB237D6A7200104BA8 /* AppDelegate.m in Sources */,
 				37364BDC237D6A7300104BA8 /* main.m in Sources */,
@@ -411,11 +417,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 86L92M2S83;
+				DEVELOPMENT_TEAM = CC39248354;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BiLuSDKIAPDemo",
+					"$(PROJECT_DIR)/BiLuSDKIAPDemo/BiLuSDKIAP",
 				);
 				INFOPLIST_FILE = BiLuSDKIAPDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -437,11 +444,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 86L92M2S83;
+				DEVELOPMENT_TEAM = CC39248354;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BiLuSDKIAPDemo",
+					"$(PROJECT_DIR)/BiLuSDKIAPDemo/BiLuSDKIAP",
 				);
 				INFOPLIST_FILE = BiLuSDKIAPDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

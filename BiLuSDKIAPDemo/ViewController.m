@@ -150,21 +150,9 @@
 
 - (void)IAPBtnAction {
 
-    AppStorePay *pay = [AppStorePay manager];
-    pay.payid = _tf1.text;
+    [[BiLuVirtualCurrency shareIAPManager ]startIAPWithProductID:@"商品ID" completeHandle:^(BiLuIAPResultType type, NSDictionary * _Nonnull data) {
 
-    pay.verpay = ^{
-
-        [BiLuVirtualCurrency appStoreReceipt:^(NSDictionary * _Nonnull json, NSError * _Nonnull error) {
-
-            NSLog(@"%@",json);
-        }];
-    };
-
-
-    NSLog(@"touch");
-
-
+    }];
 }
 
 @end

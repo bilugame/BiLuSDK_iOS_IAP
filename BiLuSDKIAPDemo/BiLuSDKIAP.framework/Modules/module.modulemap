@@ -1,6 +1,0 @@
-framework module BiLuSDKIAP {
-  umbrella header "BiLuSDKIAP.h"
-
-  export *
-  module * { export * }
-}
