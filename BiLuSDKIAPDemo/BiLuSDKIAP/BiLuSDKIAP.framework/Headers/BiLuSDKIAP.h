@@ -2,7 +2,7 @@
 //  BiLuSDKIAP.h
 //  BiLuSDKIAP
 //
-//  Created by 安金粮 on 2019/12/11.
+//  Created by AJL on 2019/12/11.
 //  Copyright © 2019 BiLuSDKIAP. All rights reserved.
 //
 

@@ -156,11 +156,41 @@ typedef NS_ENUM(NSUInteger,BiLuIAPResultType) {
     BiLuIAPResultIDError = 6,       // 项目ID错误或不存在此项目
 };
 
-//内购方法
-[[BiLuVirtualCurrency shareIAPManager] startIAPWithProductID:@"商品ID" completeHandle:^(BiLuIAPResultType type, NSDictionary * _Nonnull data) {
-     //type：内购结果
-     //data ：二次验证结果
-}];
+/// AppStore 内购（带二次验证回调）
+/// @param productID 内购项目的产品ID
+/// @param trackingcode  自定义追踪码（可放置需要绑定回调的数据）
+/// @param type YES返回全部订单，NO返回当前商品订单（默认返回全部订单）
+/// @param handle 内购的结果及二次验证回调
+- (void)startIAPWithProductID:(NSString *)productID trackingcode:(NSDictionary *)trackingcode  type:(BOOL)type completeHandle: (BiLuIAPCompletionHandle)handle;
+
+ //回调数据模型    
+  {
+     "code": 200,
+     "status": "ok",
+     "payload": {
+        "status": 0,
+        "msg": "购买成功",
+        "data": [订单数组
+                    {
+                    "quantity":"1",
+                    "product_id":"112701",
+                    "transaction_id":"1000000605117325",
+                    "original_transaction_id":"1000000605117325",
+                    "purchase_date":"2019-12-16 07:24:43 Etc\/GMT","purchase_date_ms":"1576481083429",
+                    "purchase_date_pst":"2019-12-15 23:24:43 America\/Los_Angeles",
+                    "original_purchase_date":"2019-12-16 07:24:43Etc\/GMT",
+                    "original_purchase_date_ms":"1576481083429",
+                    "original_purchase_date_pst":"2019-12-15 23:24:43 America\/Los_Angeles",
+                    "is_trial_period":"false"
+                    }
+        ],
+        //验证凭证  "receipt_data":"MIIT1QYJKoZIhvcNAQcCoIITxjCCE8ICAQExCzAJBgUrDgMCGgUAMIIDdgYJKoZIhvcNAQcBoIIDZwSCA2MxggNfMAoCAQgCAQEEAhYAMAoCARQCAQEEAgwAMAsCAQECAQEEAwIBADALAgEDAgEBBAMMATEwCwIBCwIBAQQDAgEAMAsCAQ8CAQEEAwIBADALAgEQAgEBBAMCAQAwCwIBGQIBAQQDAgEDMAwCAQoCAQEEBBYCNCswDAIBDgIBAQQEAgIAnTANAgENAgEBBAUCAwHWUDANAgETAgEBBAUMAzEuMDAOAgEJAgEBBAYCBFAyNTMwGAIBAgIBAQQQDA5jbi50a...",
+        "custom_scene":"第三方自定义字符串",//第三方自定义字符串
+        }
+     },
+     "version": "500bdb5279c24e6297187202808c1bad"
+ }   
+
 </code></pre>
 
 ### 3.2、服务器验证

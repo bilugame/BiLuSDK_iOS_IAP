@@ -49,46 +49,49 @@ MD5(**签名字符串**)并转为**大写**，得到签名，
 
 
 ##### POST Parameters：
-
-| 参数          | 类型   | 描述                                                | 是否必须 |
-| ------------- | ------ | --------------------------------------------------- | -------- |
-| sandbox       | Int    | 0正式环境1 沙盒环境                                 | 是       |
+| 参数          | 类型   | 描述                                                         | 是否必须 |
+| ------------- | ------ | ------------------------------------------------------------ | -------- |
+| sandbox       | Int    | 0正式环境1 沙盒环境                                          | 是       |
 | apple_receipt | String | apple给客户端的验证参数 ,base64encode,并urlencode下,把+替换为%2B | 是       |
+
 
 
 
 ## Response(返回结果)
 
-成功：
+成功：data 为订单信息有多个
 
 ```json
 {
     "code": 200,
     "status": "ok",
     "payload": {
-        "status": 0,  
+        "status": 0,   //见底部字典
         "msg": "购买成功",
-        "data": [
-            {
-                "quantity": "1",
-                "product_id": "goods1",
-                "transaction_id": "1000000589235976",
-                "original_transaction_id": "1000000589235976",
-                "purchase_date": "2019-11-07 07:27:23 Etc/GMT",
-                "purchase_date_ms": "1573111643000",
-                "purchase_date_pst": "2019-11-06 23:27:23 America/Los_Angeles",
-                "original_purchase_date": "2019-11-07 07:27:23 Etc/GMT",
-                "original_purchase_date_ms": "1573111643000",
-                "original_purchase_date_pst": "2019-11-06 23:27:23 America/Los_Angeles",
-                "is_trial_period": "false"
-            }
-        ]
+        "data":[{
+           "quantity":"1",
+           "product_id":"112701",
+          "transaction_id":"1000000605117325",
+          "original_transaction_id":"1000000605117325",
+          "purchase_date":"2019-12-16 07:24:43 Etc\/GMT",
+          "purchase_date_ms":"1576481083429",
+          "purchase_date_pst":"2019-12-15 23:24:43 America\/Los_Angeles",
+          "original_purchase_date":"2019-12-16 07:24:43Etc\/GMT",
+          "original_purchase_date_ms":"1576481083429",
+          "original_purchase_date_pst":"2019-12-15 23:24:43 America\/Los_Angeles",
+          "is_trial_period":"false"
+          }
+        ],
+       "receipt_data":"MIIT1QYJKoZIhvcNAQcCoIITxjCCE8ICAQExCzAJBgUrDgMCGgUAMIIDdgYJKoZIhvcNAQcBoIIDZwSCA2MxggNfMAoCAQgCAQEEAhYAMAoCARQCAQEEAgwAMAsCAQECAQEEAwIBADALAgEDAgEBBAMMATEwCwIBCwIBAQQDAgEAMAsCAQ8CAQEEAwIBADALAgEQAgEBBAMCAQAwCwIBGQIBAQQDAgEDMAwCAQoCAQEEBBYCNCswDAIBDgIBAQQEAgIAnTANAgENAgEBBAUCAwHWUDANAgETAgEBBAUMAzEuMDAOAgEJAgEBBAYCBFAyNTMwGAIBAgIBAQQQDA5jbi50a...", //二次验证凭证
     },
     "version": "500bdb5279c24e6297187202808c1bad"
 }
+
 ```
 
-失败：
+
+
+请求失败：
 
 ```
 {
@@ -98,20 +101,17 @@ MD5(**签名字符串**)并转为**大写**，得到签名，
 }
 ```
 
-####    
+####  
 
 
 
 ##### 返回数据说明
 
-`status`:	
+`status`:  
 
--  -1    请求appstore 失败请重试
-
-- 21000 App Store不能读取你提供的JSON对象	
-
+- -1    请求appstore 失败请重试
+- 21000 App Store不能读取你提供的JSON对象  
 - 21002 receipt-data域的数据有问题
-
 - 21003 receipt无法通过验证
 - 21004 提供的shared secret不匹配你账号中的shared secret
 - 21005 receipt服务器当前不可用

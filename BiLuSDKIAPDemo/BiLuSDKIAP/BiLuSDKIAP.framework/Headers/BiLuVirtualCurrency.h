@@ -63,8 +63,10 @@ typedef void(^BiLuIAPCompletionHandle)(BiLuIAPResultType type, NSDictionary *dat
 
 /// AppStore 内购（带二次验证回调）
 /// @param productID 内购项目的产品ID
+/// @param trackingcode  自定义追踪码（可放置需要绑定回调的数据,可传空）
+/// @param type YES返回全部订单，NO返回当前商品订单（默认返回全部订单）
 /// @param handle 内购的结果及二次验证回调
-- (void)startIAPWithProductID:(NSString *)productID  completeHandle: (BiLuIAPCompletionHandle)handle;
+- (void)startIAPWithProductID:(NSString *)productID trackingcode:(NSDictionary *)trackingcode  type:(BOOL)type completeHandle: (BiLuIAPCompletionHandle)handle;
 
 
 @end

@@ -30,9 +30,10 @@
     [self.window makeKeyAndVisible];
     NSLog(@"%@",BiLuSDKManager.SDKVersion);
 
-    [BiLuSDKManager registerViewWithAppID:@"66c7c15dacf008d8" appKey:@"7794001eb60d202c705e0dd3dda6b819" configuration:nil block:^(BiLuPlayer * _Nonnull player, NSError * _Nonnull error) {
+      [BiLuSDKManager registerViewWithAppID:@"66c7c15dacf008d8" appKey:@"7794001eb60d202c705e0dd3dda6b819" configuration:nil block:^(BiLuPlayer * _Nonnull player, NSError * _Nonnull error) {
 
-
+        NSString *log =   [NSString stringWithFormat:@"%@昵称：\nID：%@\n\n回调：%@",player.alias,player.playerID,player.registerCode];
+          NSLog(@"%@", log);
 
     }];
 
