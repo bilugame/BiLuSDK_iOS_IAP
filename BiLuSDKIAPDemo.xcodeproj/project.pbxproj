@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D0D371B23A23F9300A39BFB /* BiLuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D371923A23F9300A39BFB /* BiLuSDK.bundle */; };
-		0D7C720423AA1B9A008BC71C /* BiLuSDKIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7C720323AA1B9A008BC71C /* BiLuSDKIAP.framework */; };
+		0DF982AD23AB7CBF0031B4E7 /* BiLuSDKIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF982AC23AB7CBF0031B4E7 /* BiLuSDKIAP.framework */; };
 		37364BCB237D6A7200104BA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BCA237D6A7200104BA8 /* AppDelegate.m */; };
 		37364BD1237D6A7200104BA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37364BD0237D6A7200104BA8 /* ViewController.m */; };
 		37364BD4237D6A7200104BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37364BD2237D6A7200104BA8 /* Main.storyboard */; };
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		0D0D371923A23F9300A39BFB /* BiLuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BiLuSDK.bundle; sourceTree = "<group>"; };
-		0D7C720323AA1B9A008BC71C /* BiLuSDKIAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKIAP.framework; sourceTree = "<group>"; };
+		0DF982AC23AB7CBF0031B4E7 /* BiLuSDKIAP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiLuSDKIAP.framework; sourceTree = "<group>"; };
 		37364BC6237D6A7200104BA8 /* BiLuSDK_IAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLuSDK_IAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37364BC9237D6A7200104BA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37364BCA237D6A7200104BA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D7C720423AA1B9A008BC71C /* BiLuSDKIAP.framework in Frameworks */,
+				0DF982AD23AB7CBF0031B4E7 /* BiLuSDKIAP.framework in Frameworks */,
 				37364C00237D6C5000104BA8 /* CoreTelephony.framework in Frameworks */,
 				37364BFE237D6C4900104BA8 /* CoreMotion.framework in Frameworks */,
 				37364BFC237D6C4200104BA8 /* Security.framework in Frameworks */,
@@ -90,7 +90,7 @@
 		0D0D371823A23F9300A39BFB /* BiLuSDKIAP */ = {
 			isa = PBXGroup;
 			children = (
-				0D7C720323AA1B9A008BC71C /* BiLuSDKIAP.framework */,
+				0DF982AC23AB7CBF0031B4E7 /* BiLuSDKIAP.framework */,
 				0D0D371923A23F9300A39BFB /* BiLuSDK.bundle */,
 			);
 			path = BiLuSDKIAP;
@@ -431,7 +431,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.tinylion.sw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceshis.test;
 				PRODUCT_NAME = BiLuSDK_IAP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -458,7 +458,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.tinylion.sw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceshis.test;
 				PRODUCT_NAME = BiLuSDK_IAP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;

@@ -153,7 +153,7 @@
 /// @param trackingcode  自定义追踪码（可放置需要绑定回调的数据,可传空）
 /// @param type YES返回全部订单，NO返回当前商品订单（默认返回全部订单）
 /// @param handle 内购的结果及二次验证回调
-    [[BiLuVirtualCurrency shareIAPManager ] startIAPWithProductID:@"goods2" trackingcode:@{} type:NO completeHandle:^(BiLuIAPResultType type, NSDictionary * _Nonnull data) {
+    [[BiLuVirtualCurrency shareIAPManager ] startIAPWithProductID:@"Marsplan_diamond_7" trackingcode:@{} type:NO completeHandle:^(BiLuIAPResultType type, NSDictionary * _Nonnull data) {
         NSLog(@"??%lu,%@",(unsigned long)type,data);
     }];
     
